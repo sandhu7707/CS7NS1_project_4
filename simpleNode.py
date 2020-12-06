@@ -5,10 +5,9 @@ import threading
 
 def start_sender(ip, port):
     sender = SenderThread(ip, port)
-    while True:
-        # criticalSenderThread = threading.Thread(target=sender.send, args=(messageJSON,))
-        senderThread = threading.Thread(target = sender.start_sender)
-        senderThread.start()
+    # criticalSenderThread = threading.Thread(target=sender.send, args=(messageJSON,))
+    senderThread = threading.Thread(target = sender.start_sender)
+    senderThread.start()
 
 def start_receiver():
     receiver = ReceiverThread()
