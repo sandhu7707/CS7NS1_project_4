@@ -1,4 +1,4 @@
-simpleNode.py works fine in windows but seems to have trouble with multithreading in pi
+send/receive works fine now .. ignore the commit message visible on most of the files above
 
 .. to run in your local ..
 > start a simpleNode with a receiving port A and target port B
